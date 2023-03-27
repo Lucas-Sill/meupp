@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*100% viewport height*/
+    width: 100vw;
+    /*100% viewport width*/
+    background-image: url(https://cosmonerd.com.br//uploads/2022/03/coringa-capa-cosmo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo {
+    width: 1700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: goldenrod;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 80px;
+}
+
+nav ul {
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+    margin-left: 400px;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px black;
+}
+
+nav ul li a:hover {
+    color: #4cc804;
+    transition: 0.5s;
+    text-shadow: 0px 0px 3px black;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-shadow: 0px 0px 3px black;
+}
+
+main {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+main img {
+    width: 500px;
+}
+
+main h5 {
+    text-align: left;
+    color: #4cc804;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+main h4 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main h6 {
+    width: fit-content;
+    color: #ffffff;
+    /* font-size: 13px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 19px;
+    background-color: #cf0606;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Versão para Tablet */
+
+@media (max-width: 1024px) {
+    .conteudo {
+        width: 1000px;
+        height: 600px;
+    }
+    main {
+        height: 400px;
+    }
+}
+
+
+/* Versão Mobile - Celular */
+
+@media (max-width: 425px) {
+    .conteudo {
+        width: 360px;
+        height: 700px;
+    }
+    nav ul {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    body {
+        background-position-x: center;
+        background-image: url(https://assets.vogue.in/photos/5d7224d50ce95e0008696c55/2:3/w_1920,c_limit/Joker.jpg);
+    }
+    main img {
+        width: 240px;
+    }
+    main h5 {
+        display: none;
+    }
+    main h4 {
+        text-shadow: 0px 0px 3px black;
+        text-align: center;
+    }
+    main h6 {}
+}
+
+
+/* Versão Mobile - Laptop */
+
+@media (max-width: 1024px) {
+    .conteudo {
+        width: 2560px;
+        height: 1700px;
+    }
+    main {
+        height: 400px;
+    }
+    body {
+        background-position-x: -200px;
+    }
+}
